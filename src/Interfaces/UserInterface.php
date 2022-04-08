@@ -5,18 +5,16 @@ namespace CarloNicora\Minimalism\Interfaces\User\Interfaces;
 interface UserInterface
 {
     /**
-     * @param UserRoleInterface $role
      * @param int $id
      * @param string $userName
      * @param string $email
      * @param array $attributes
      */
     public function __construct(
-        UserRoleInterface $role,
-        int               $id,
-        string            $userName,
-        string            $email,
-        array             $attributes = [],
+        int    $id,
+        string $userName,
+        string $email,
+        array  $attributes = [],
     );
 
     /**
@@ -40,8 +38,4 @@ interface UserInterface
      */
     public function getAttribute(string $attributeName): mixed;
 
-    /**
-     * @return UserRoleInterface
-     */
-    public function getRole(): UserRoleInterface;
 }
