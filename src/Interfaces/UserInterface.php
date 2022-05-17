@@ -23,14 +23,14 @@ interface UserInterface
     public function getId(): int;
 
     /**
-     * @return int
+     * @return string
      */
-    public function getUserName(): int;
+    public function getUserName(): string;
 
     /**
-     * @return int
+     * @return string
      */
-    public function getEmail(): int;
+    public function getEmail(): string;
 
     /**
      * @param string $attributeName
